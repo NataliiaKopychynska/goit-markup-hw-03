@@ -1,0 +1,234 @@
+h1 {
+    font-size: 56px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+}
+
+h2 {
+    font-size: 36px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+h3 {
+    font-size: 20px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    background-color: #FFFFFF
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+
+/* header */
+header {
+    background-color: #E7E9FC
+}
+
+.logo {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+}
+
+.accent-logo {
+    color: #2e2f42;
+}
+
+.social-links {
+    font-style: normal
+}
+
+.navigation .link {
+    font-size: 16px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+
+.navigation .link:hover,
+.navigation .link:focus {
+    color:#404bbf
+}
+
+.social-links .link{
+    font-size: 16px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.social-links .link:hover,
+.social-links .link:focus {
+    color:#404BBF 
+}
+
+/* main content */
+main {
+    background-color: #FFFFFF;
+}
+
+/* section 1 */
+.baner {
+    background-color: #2E2F42;
+}
+
+.button {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    background-color: #4D5AE5;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #404BBF;
+}
+
+
+/* rubbish  secction 1*/
+.h-one {
+    font-size: 56px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+/* rubbish secction 2 */
+.h-three {
+    font-size: 20px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+}
+.paragraf-s-two {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/* rubbush secction 3 */
+.h-two {
+    font-size: 36px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+}
+
+
+/* sacction3 */
+.team-card{
+    background-color: #F4F4FD;
+}
+
+.person-card {
+    background-color: #FFFFFF;
+}
+/* footer */
+.footer {
+    background-color: #2E2F42;
+}
+
+.unaccent-logo {
+    color: #f4f4fd;
+}
+
+.footer-titlle {
+    font-size: 16px;
+    font-family: "Roboto" sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+    line-height: 24px;
+    letter-spacing: 2%;
+    color: #F4F4FD;
+}
