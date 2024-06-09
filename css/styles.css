@@ -1,6 +1,13 @@
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
 h1 {
     font-size: 56px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -13,7 +20,7 @@ h1 {
 
 h2 {
     font-size: 36px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -26,7 +33,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
@@ -67,9 +74,32 @@ p {
 }
 
 
+
 /* header */
-header {
-    background-color: #E7E9FC
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E7E9FC;
+    padding: 24px 156px;
+    gap: 332px;
+    margin: 0
+}
+    
+.navigation-title { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:76px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
 }
 
 .logo {
@@ -83,19 +113,16 @@ header {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin: 0;
 }
 
 .accent-logo {
     color: #2e2f42;
 }
 
-.social-links {
-    font-style: normal
-}
-
 .navigation .link {
     font-size: 16px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
@@ -103,16 +130,34 @@ header {
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin: 0;
 }
 
 .navigation .link:hover,
 .navigation .link:focus {
-    color:#404bbf
+    color: #404bbf
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-style: normal;
+    gap: 40px;
+    margin: 0;
+}
+
+.social-links-tittle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
 }
 
 .social-links .link{
     font-size: 16px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
@@ -129,12 +174,33 @@ header {
 
 /* main content */
 main {
+    flex-grow: 1;
     background-color: #FFFFFF;
 }
 
 /* section 1 */
-.baner {
+.section-baner{
+    display: flex;
+    flex-direction: column;
     background-color: #2E2F42;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+/* .baner {
+    margin-right: auto;
+    margin-left: auto;
+} */
+.baner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0 auto;
+    padding-bottom: 0 auto;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -146,6 +212,9 @@ main {
     background-color: #4D5AE5;
     color: #FFFFFF;
     cursor: pointer;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: none;
 }
 
 button:hover,
@@ -153,11 +222,9 @@ button:focus {
     background-color: #404BBF;
 }
 
-
-/* rubbish  secction 1*/
 .h-one {
     font-size: 56px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -165,18 +232,48 @@ button:focus {
     line-height: 1.07;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    width: 496px;
+    
 }
-/* rubbish secction 2 */
+
+/* secction 2 */
+
+.our-work-container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+}
+
+.none-display {
+    display: none;
+}
+
+.our-work-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.our-work-block-list {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding: 120px 0;
+    width: 264px;
+}
+
 .h-three {
     font-size: 20px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2E2F42;
+    margin: 0;
 }
 .paragraf-s-two {
     font-size: 16px;
@@ -189,10 +286,46 @@ button:focus {
     letter-spacing: 0.02em;
     color: #434455;
 }
-/* rubbush secction 3 */
+/* secction 3 */
+
+.team-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F4FD;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    margin: 120px 0;
+    gap: 72px;
+}
+
+.team-card-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+
+}
+
+.card-tittle {
+    margin: 32px 16px; 
+    gap:8px;
+
+}
+
 .h-two {
     font-size: 36px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
@@ -201,20 +334,89 @@ button:focus {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2E2F42;
+    margin: 0;
 }
 
-
-/* sacction3 */
-.team-card{
-    background-color: #F4F4FD;
+.h-name-person {
+    text-align: center;
+    margin: 0;
 }
 
-.person-card {
-    background-color: #FFFFFF;
+.paragraf-position {
+    text-align: center;
+    margin: 0;
 }
+
+/* 4 section */
+.portfolio-container {
+    max-width: 1128px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.portfolio-container-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 120px 0;
+    gap: 72px;
+}
+
+.project-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.project-card-item {
+    width: calc((100% - 48px) / 3 );
+    margin: 0;
+    padding: 0;
+    padding: 20px;
+}
+
+.img-project {
+    display: block;
+}
+
+.card-title {
+   box-sizing: border-box;
+   margin:32px 16px;;
+   padding:0;
+   border-top-width: none;
+   border-left-width: 1px solid #E7E9FC;
+   border-right-width: 1px solid #E7E9FC;
+   border-bottom-width: 1px solid #E7E9FC;
+}
+.name-app-tittle {
+    text-align: left;
+    margin: 0;
+}
+
+.name-servise {
+    text-align: left;
+    margin: 0;
+}
+
 /* footer */
 .footer {
     background-color: #2E2F42;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-class {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 156px;
+    gap: 16px;
+
 }
 
 .unaccent-logo {
@@ -222,8 +424,9 @@ button:focus {
 }
 
 .footer-titlle {
+    max-width: 264px;
     font-size: 16px;
-    font-family: "Roboto" sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-decoration: none;
